@@ -35,3 +35,39 @@ audio::-webkit-media-controls-volume-slider {
     color: white;
     background-color: #004080;
 }
+
+audio::-webkit-media-controls-timeline {
+    background-color: white; /* Couleur blanche pour la barre de progression */
+    border-radius: 4px;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    background-color: white; /* Couleur blanche pour le curseur de volume */
+    border-radius: 4px;
+}
+
+audio::-webkit-media-controls-play-button {
+    filter: invert(1);
+}
+
+audio::-moz-range-track {
+    background-color: white; /* Couleur blanche pour Firefox */
+}
+
+audio::-moz-range-progress {
+    background-color: white; /* Couleur blanche pour la partie chargée */
+}
+
+audio::-moz-range-thumb {
+    background-color: white; /* Curseur en blanc pour Firefox */
+    border: 1px solid #004080;
+    border-radius: 4px;
+}
+
+audio::-ms-fill-lower {
+    background-color: white; /* Partie chargée pour IE/Edge */
+}
+
+audio::-ms-fill-upper {
+    background-color: #004080; /* Partie non chargée pour IE/Edge */
+}
