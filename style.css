@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001f3f; /* Bleu marine */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.audio-container {
+    text-align: center;
+}
+
+audio {
+    width: 300px;
+    background-color: #004080; /* Couleur bleu marine plus claire */
+    border: 2px solid #001f3f; /* Bordure bleu marine */
+    border-radius: 8px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #004080;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider {
+    color: white;
+    background-color: #004080;
+}
