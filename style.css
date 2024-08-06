@@ -15,59 +15,37 @@ body {
 
 audio {
     width: 300px;
-    background-color: #004080; /* Couleur bleu marine plus claire */
-    border: 2px solid #001f3f; /* Bordure bleu marine */
+    border: none; /* Supprime les bordures par défaut */
     border-radius: 8px;
+    outline: none;
 }
 
 audio::-webkit-media-controls-panel {
-    background-color: #004080;
+    background-color: transparent;
+    color: white;
 }
 
 audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-timeline,
-audio::-webkit-media-controls-current-time-display,
-audio::-webkit-media-controls-time-remaining-display,
-audio::-webkit-media-controls-seek-back-button,
-audio::-webkit-media-controls-seek-forward-button,
-audio::-webkit-media-controls-mute-button,
-audio::-webkit-media-controls-volume-slider {
-    color: white;
-    background-color: #004080;
-}
-
-audio::-webkit-media-controls-timeline {
-    background-color: white; /* Couleur blanche pour la barre de progression */
-    border-radius: 4px;
-}
-
-audio::-webkit-media-controls-volume-slider {
-    background-color: white; /* Couleur blanche pour le curseur de volume */
-    border-radius: 4px;
-}
-
-audio::-webkit-media-controls-play-button {
+audio::-webkit-media-controls-mute-button {
     filter: invert(1);
 }
 
-audio::-moz-range-track {
-    background-color: white; /* Couleur blanche pour Firefox */
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-volume-slider {
+    background-color: white;
 }
 
+audio::-moz-range-track,
 audio::-moz-range-progress {
-    background-color: white; /* Couleur blanche pour la partie chargée */
+    background-color: white;
 }
 
 audio::-moz-range-thumb {
-    background-color: white; /* Curseur en blanc pour Firefox */
+    background-color: white;
     border: 1px solid #004080;
-    border-radius: 4px;
 }
 
-audio::-ms-fill-lower {
-    background-color: white; /* Partie chargée pour IE/Edge */
-}
-
+audio::-ms-fill-lower,
 audio::-ms-fill-upper {
-    background-color: #004080; /* Partie non chargée pour IE/Edge */
+    background-color: white;
 }
