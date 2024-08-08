@@ -44,7 +44,7 @@ audio::-webkit-media-controls-panel {
 
 audio::-webkit-media-controls-play-button,
 audio::-webkit-media-controls-mute-button {
-    filter: invert(1);
+    filter: invert(0);
 }
 
 audio::-webkit-media-controls-timeline,
